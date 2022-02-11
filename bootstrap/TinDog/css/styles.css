@@ -5,9 +5,16 @@
 .h1-style {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.5;
   color: #fff;
+}
+
+.h2-style {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .container-customed {
@@ -67,4 +74,17 @@ p {
 
 .feature-icon:hover {
   color: #ff4c68;
+}
+
+#testimonials {
+  padding: 7% 10%;
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonials-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
 }
