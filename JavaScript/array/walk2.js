@@ -1,5 +1,7 @@
 var arr = [1,2,3,4];
+var i = 0;
 
-for (var i = 0; i < arr.length; i++) {
+while (i < arr.length) {
   console.log(arr[i]);
+  i++;
 }
