@@ -12,3 +12,4 @@ fuzzbuzz(9);
 fuzzbuzz(10);
 fuzzbuzz(15);
 fuzzbuzz(1);
+fuzzbuzz("0");
