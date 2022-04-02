@@ -1,2 +1,2 @@
-var name = prompt("What is your name?");
-alert("Welcome, " + name);
+var name = 'nana';
+console.log("Welcome, " + name);

@@ -1,0 +1,124 @@
+body {
+  background-color: #000;
+  border: unset;
+}
+
+div {
+  margin-bottom: -1px;
+}
+
+footer {
+  font-size: 12px;
+}
+
+a.fab {
+  text-decoration: none;
+}
+
+.container-custom-1 {
+  padding: 15 30 0 30;
+}
+
+.container-custom-2 {
+  padding: 15 30 0 30;
+}
+
+#bar {
+  background-color: #000;
+}
+
+.title-icon img {
+  width: 120;
+}
+
+.nav-link {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#title {
+   background-color: #000;
+}
+
+.astronaut {
+  padding: 10% 0 10% 0;
+  text-align: center;
+}
+
+.h1-style {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #dddddd;
+  padding: 0 50 0 50
+}
+
+.h1-style:hover {
+  color: #83b44b;
+}
+
+.author {
+  text-align: right;
+}
+
+.title-text {
+  padding-top: 15%;
+}
+
+.title-image {
+   width: 70%;
+}
+
+.scrowdownbtn {
+  background-color: #000;
+  text-align: center;
+  padding: 0 0 5% 0;
+}
+
+.text {
+  padding: 2% 25% 3% 25%;
+}
+
+.header {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 42px;
+}
+
+.hand-write {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+}
+
+.centerlize {
+  text-align: center;
+}
+
+.rightward {
+  text-align: right;
+}
+
+.pixelstyle {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.text-reset {
+  text-decoration: none;
+}
+
+.linkedin:hover {
+  color: #0e76a8;
+}
+
+.github:hover {
+  color: #563d7c;
+}
+
+.gmail:hover {
+  color: #bb001b;
+}
+
+.twr:hover {
+  color: #1da1f2;
+}
+
