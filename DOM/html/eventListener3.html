@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+   <h1>Hello</h1>
+   <p></p>
+   <button type="button" name="button" class='btn1'>Don't touch me</button>
+   <script type="text/javascript">
+     var btn1 = document.querySelector('.btn1');
+     btn1.addEventListener('click',
+       function handleclick() {
+         document.querySelector('p').innerHTML = 'Bye!<br>';
+         btn1.remove();
+       }
+     );
+     btn1.addEventListener('mouseover',
+       function handleover() {
+         document.querySelector('p').innerHTML += "<br>";
+       }
+     );
+     btn1.addEventListener('mouseout',
+       function handleout() {
+         document.querySelector('p').innerHTML += "<br>";
+       }
+     );
+   </script>
+
+  </body>
+</html>
