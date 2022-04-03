@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Hello</p>
+    <button type="button" name="button" onclick="count()">Count!</button>
+    <span></span>
+    <script type="text/javascript">
+      function count() {
+        var list = document.getElementsByTagName('p');
+        var num = list.length;
+        document.querySelector('span').innerHTML = num;
+        // list.innerHTML = "Good Bye";  // not work
+        list[0].innerHTML = "Good Bye";
+      }
+    </script>
+  </body>
+</html>
