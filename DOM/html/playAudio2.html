@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button">Play/Pause music!</button>
+    <script type="text/javascript">
+      var btn = document.querySelector('button');
+      var audio = new Audio('http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3');
+      audio.type = 'audio/mp3';
+      btn.addEventListener("click", ppmusic);
+
+      function ppmusic() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+
+    </script>
+  </body>
+</html>
