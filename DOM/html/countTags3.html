@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <button type="button" name="button" onclick="count()">Count!</button>
+    <span></span>
+    <script type="text/javascript">
+      function count() {
+        var num = document.getElementsByTagName('p').length;
+        document.querySelector('span').innerHTML = num;
+      }
+    </script>
+  </body>
+</html>
