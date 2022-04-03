@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <button type="button" name="button" onclick="changeTitle()">Hit me</button>
+    <script type="text/javascript">
+      function changeTitle() {
+        var h1_list = document.getElementsByTagName('h1');
+        for (var i = 0; i < h1_list.length; i++) {
+          h1_list[i].innerHTML = 'Good bye!';
+        }
+      }
+    </script>
+  </body>
+</html>
