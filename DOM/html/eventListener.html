@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+   <button type="button" name="button" class='btn1'>button</button>
+   <h1>Hello</h1>
+   <p>Hello world!<br></p>
+   <script type="text/javascript">
+     var btn1 = document.querySelector('.btn1');
+     btn1.addEventListener('click', handleclick);
+     btn1.addEventListener('mouseover', handleover);
+     btn1.addEventListener('mouseout', handleout);
+
+     function handleclick() {
+       document.querySelector('p').innerHTML = 'Bye!<br>';
+     }
+
+     function handleover() {
+       document.querySelector('p').innerHTML += "over<br>"
+     }
+
+     function handleout() {
+       document.querySelector('p').innerHTML += "out<br>"
+     }
+   </script>
+
+  </body>
+</html>
