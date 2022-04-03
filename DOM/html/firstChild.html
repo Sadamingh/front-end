@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="first()">First</button>
+    <button type="button" name="button" onclick="first2()">First First</button>
+    <button type="button" name="button" onclick="first3()">First First First</button>
+
+    <script type="text/javascript">
+      function first() {
+        var doc = document.firstElementChild;
+        alert(doc)
+      }
+
+      function first2() {
+        var doc = document.firstElementChild.firstElementChild;
+        alert(doc)
+      }
+
+      function first3() {
+        var doc = document.firstElementChild.firstElementChild.firstElementChild;
+        alert(doc)
+      }
+    </script>
+  </body>
+</html>

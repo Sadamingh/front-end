@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="first()">First</button>
+    <button type="button" name="button" onclick="firstlast()">First Last First</button>
+
+    <script type="text/javascript">
+      function first() {
+        var doc = document.firstElementChild;
+        alert(doc);
+      }
+
+      function firstlast() {
+        var text = document.firstElementChild.lastElementChild.firstElementChild;
+        text.innerHTML = "Changed";
+      }
+    </script>
+  </body>
+</html>
