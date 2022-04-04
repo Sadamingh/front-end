@@ -5,13 +5,17 @@
     <title></title>
   </head>
   <body>
-    <p>Wait <span>3</span> seconds for alert.</p>
+    <p>Wait <span>3</span> seconds for music.</p>
     <script type="text/javascript">
+      var audio = new Audio('http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3');
       setTimeout(function test() {
-        alert('Hello');
+        audio.play();
       }, 3000);
       setInterval(function test2() {
-        document.querySelector('span').innerHTML--;
+        var s = document.querySelector('span');
+        if (s.innerHTML > 0) {
+          s.innerHTML--;
+        }
       }, 1000)
     </script>
   </body>
