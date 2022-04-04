@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Hello</p>
+    <p>world</p>
+    <p>jQuery!</p>
+    <button type="button" name="button" onclick="rewrite1()">Rewrite first</button>
+    <button type="button" name="button" onclick="rewrite2()">Rewrite second</button>
+    <button type="button" name="button" onclick="rewrite3()">Rewrite last</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript">
+      function rewrite1() {
+        $('p').first().html("<em>Rewrite!</em>");
+      }
+      function rewrite2() {
+        $($('p').get(1)).html("<em>Rewrite!</em>");
+      }
+      function rewrite3() {
+        $($('p').get($('p').length - 1)).html("<em>Rewrite!</em>");
+      }
+    </script>
+  </body>
+</html>
