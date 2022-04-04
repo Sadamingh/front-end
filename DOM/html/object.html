@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="addContent()">
+    <h1></h1>
+    <h2></h2>
+    <p></p>
+    <script type="text/javascript">
+      var content = {
+        h1: "Hello",
+        h2: "World",
+        p: "Welcome!"
+      }
+
+      function addContent() {
+        document.querySelector('h1').innerHTML = content.h1;
+        document.querySelector('h2').innerHTML = content.h2;
+        document.querySelector('p').innerHTML = content.p;
+      }
+    </script>
+  </body>
+</html>
