@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Wait <span>3</span> seconds for alert.</p>
+    <script type="text/javascript">
+      setTimeout(function test() {
+        alert('Hello');
+      }, 3000);
+      setInterval(function test2() {
+        document.querySelector('span').innerHTML--;
+      }, 1000)
+    </script>
+  </body>
+</html>
