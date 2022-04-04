@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="https://google.com">Get my href</a>
+    <p class="test">Get my class</p>
+    <input type="text" name="" value="Get my value">
+    <br><br>
+    <button type="button" name="button" onclick="getAttr()">Get all</button>
+    <p class="1"></p>
+    <p class="2"></p>
+    <p class="3"></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript">
+      function getAttr() {
+        var val1 = $('a').attr("href");
+        var val2 = $($('p').get(0)).attr("class");
+        var val3 = $('input').attr("value");
+        $('.1').html(val1);
+        $('.2').html(val2);
+        $('.3').html(val3);
+      }
+    </script>
+
+  </body>
+</html>
