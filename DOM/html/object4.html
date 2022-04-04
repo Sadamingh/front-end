@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" class="w" name="w" value="" placeholder="Width">
+    <input type="text" class="l" name="l" value="" placeholder="Length">
+    <button type="button" name="button" onclick="getarea()">Calculate</button>
+    <p></p>
+    <script type="text/javascript">
+
+      class Rectangular {
+        constructor(width, length) {
+          this.width = width;
+          this.length = length;
+        }
+        get area() {
+          return this.width * this.length;
+        }
+      }
+
+      function getarea() {
+        var width = document.querySelector('.w').value;
+        var length = document.querySelector('.l').value;
+        var rect = new Rectangular(width, length);
+        document.querySelector('p').innerHTML = rect.area;
+      }
+
+    </script>
+  </body>
+</html>
