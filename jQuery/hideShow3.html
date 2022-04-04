@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <button type="button" name="button" onclick="test1()">Click to fade out title</button>
+    <button type="button" name="button" onclick="test2()">Click to fade in title</button>
+    <h1>Title</h1>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      function test1() {
+        $('h1').fadeOut();
+      }
+      function test2() {
+        $('h1').fadeIn();
+      }
+    </script>
+  </body>
+</html>
