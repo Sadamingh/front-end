@@ -8,11 +8,15 @@
     <p>Hello</p>
     <p>world</p>
     <p>jQuery!</p>
-    <button type="button" name="button" onclick="rewrite()">Rewrite all</button>
+    <button type="button" name="button" onclick="rewrite1()">Rewrite by text</button>
+    <button type="button" name="button" onclick="rewrite2()">Rewrite by html</button>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script type="text/javascript">
-      function rewrite() {
-        $('p').text("Rewrite!");
+      function rewrite1() {
+        $('p').text("<em>Rewrite!</em>");
+      }
+      function rewrite2() {
+        $('p').html("<em>Rewrite!</em>");
       }
     </script>
   </body>
