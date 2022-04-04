@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .big-title {
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class>Hello!</p>
+    <button type="button" name="button" onclick="bye()">Good Bye!</button>
+    <button type="button" name="button" onclick="remove()">Remove style</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript">
+      function bye() {
+        $('p').html('Bye!');
+        $('p').addClass('big-title');
+      }
+      function remove() {
+        $('p').removeClass('big-title');
+      }
+    </script>
+
+  </body>
+</html>
