@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="test1()">Click to add button</button>
+    <button type="button" name="button" onclick="test2()">Click to remove button</button>
+    <br class="afterthis">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript">
+      function test1() {
+        $(".afterthis").after("<button type='button' name='button'>new button</button><br>")
+      }
+      function test2() {
+        if ($("button").length > 2) {
+          $($("button").get(-1)).remove();
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="test()">Click to add button</button>
+    <br class="afterthis">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript">
+      function test() {
+        $(".afterthis").after("<button type='button' name='button'>new button</button><br>")
+      }
+    </script>
+  </body>
+</html>
