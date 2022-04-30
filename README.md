@@ -5,5 +5,5 @@
 - 3 [Javascript](./JavaScript)
 - 4 [jQuery](./jQuery)
 - 5 Vue.js
-- 6 D3.js
+- 6 [D3.js](./D3)
 - 7 [React.js](./React)
